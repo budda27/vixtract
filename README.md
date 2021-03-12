@@ -88,8 +88,15 @@ https://software.opensuse.org/package/debootstrap
 debootstrap --arch=amd64 bionic ./test http://archive.ubuntu.com/ubuntu/
 ```
 
-* 
+* Задаём пароль:
 
+```
+chroot test/
+```
+
+```
+passwd root
+```
 
 
 
