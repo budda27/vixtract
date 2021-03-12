@@ -73,3 +73,24 @@ ViXtract – это сборка на основе популярных откр
 ## Известные проблемы
 
 1. В текущей версии ViXtract не поддерживает установку в окружении за корпоративным прокси с авторизацией. В таком случае необходимо до установки вручную прописать конфигурацию прокси для npm, anaconda, wget, причем для wget также может потребоваться отключение проверки сертификата 'check_certificate = off'
+
+## Установка в LXC
+### Opensuse:
+
+* Устанавливаем свежий пакет debootstrap
+```
+https://software.opensuse.org/package/debootstrap
+```
+
+* Готовим окружение Ubuntu 18 LTS (Bionic)
+
+```
+debootstrap --arch=amd64 bionic ./test http://archive.ubuntu.com/ubuntu/
+```
+
+* 
+
+
+
+
+
