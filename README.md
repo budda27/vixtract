@@ -107,6 +107,9 @@ vi /etc/ssh/sshd_config
 # Меняем:
 PermitRootLogin yes
 ```
+```
+exit
+```
 
 * Далее по инструкции настраиваем lxc.
 
@@ -114,4 +117,5 @@ PermitRootLogin yes
 https://vk.com/@opensuse_os-lxc-i-redmine-dlya-testov
 ```
 * Далее nat на сеть контейнера
+* Создаём ещё более безопасного пользователя! Заходим под ним по ssh
 * И производим установку по инструкции с самого начала. 
