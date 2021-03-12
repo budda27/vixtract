@@ -98,6 +98,10 @@ chroot test/
 passwd root
 ```
 
+* Далее по инструкции настраиваем lxc.
 
-
-
+```
+https://vk.com/@opensuse_os-lxc-i-redmine-dlya-testov
+```
+* Далее nat на сеть контейнера
+* И производим установку по инструкции с самого начала. 
