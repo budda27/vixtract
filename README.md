@@ -96,6 +96,16 @@ chroot test/
 
 ```
 passwd root
+apt update
+apt install openssh-server
+systemctl enable sshd
+```
+* На root по ssh
+
+```
+vi /etc/ssh/sshd_config
+# Меняем:
+PermitRootLogin yes
 ```
 
 * Далее по инструкции настраиваем lxc.
