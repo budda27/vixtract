@@ -155,7 +155,7 @@ iptables -A FORWARD -i br0 -j ACCEPT
 ```
 echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
-
+>>> Проект вообще может быть не связон с интернетом. Поэтому после установки systemctl restart firewalld 
 
 
 * Создаём ещё более безопасного пользователя! Заходим под ним по ssh
