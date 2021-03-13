@@ -88,8 +88,10 @@ zypper in debootstrap
 
 * Готовим окружение Ubuntu 18 LTS (Bionic)
 
+mkdir -p /var/lib/lxc/vixtract
+cd /var/lib/lxc/vixtract/
 ```
-debootstrap --arch=amd64 bionic ./test http://archive.ubuntu.com/ubuntu/
+debootstrap --arch=amd64 bionic ./ROOTFS http://archive.ubuntu.com/ubuntu/
 ```
 
 * Задаём пароль:
