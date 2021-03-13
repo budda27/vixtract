@@ -81,6 +81,10 @@ ViXtract – это сборка на основе популярных откр
 ```
 https://software.opensuse.org/package/debootstrap
 ```
+```
+zypper ar http://download.opensuse.org/distribution/leap/15.2/repo/oss/ debootstrap
+zypper in debootstrap
+```
 
 * Готовим окружение Ubuntu 18 LTS (Bionic)
 
