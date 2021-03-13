@@ -114,6 +114,9 @@ vi /etc/ssh/sshd_config
 PermitRootLogin yes
 ```
 ```
+echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf
+```
+```
 exit
 ```
 
@@ -149,9 +152,7 @@ iptables -A FORWARD -i br0 -j ACCEPT
 ```
 echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
-```
-echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf
-```
+
 
 
 * Создаём ещё более безопасного пользователя! Заходим под ним по ssh
