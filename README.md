@@ -157,6 +157,10 @@ nameserver 8.8.8.8
 ```
 
 ```
+systemctl enable resolvconf
+```
+
+```
 exit
 ```
 
