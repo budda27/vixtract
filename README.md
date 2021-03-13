@@ -1,4 +1,4 @@
-# ViXtract
+# [ViXtract](https://www.vixtract.ru)
  
 Удобный ETL инструмент с открытым исходным кодом на основе Python.
 
@@ -11,7 +11,12 @@ ViXtract – это сборка на основе популярных откр
 Для установки ViXtract используйте команду ниже (рекомендуется использовать Ubuntu 18.04 LTS):
 
 ```
-sudo apt-get update && sudo apt-get install git -y && git clone https://github.com/visiologyofficial/vixtract && cd vixtract && sudo chmod +x *.sh && sudo ./install.sh
+sudo apt-get update &&\ 
+sudo apt-get install git -y &&\
+git clone https://github.com/visiologyofficial/vixtract &&\
+cd vixtract &&\
+sudo chmod +x *.sh &&\
+sudo ./install.sh
 ```
 
 Если планируется использовать ViXtract с публичным доменом и HTTPS, рекомендуется до установки ViXtract настроить домен на DNS-сервере. В этом случае при установке ViXtract можно будет сразу настроить получение SSL сертификата через Letsencypt. 
