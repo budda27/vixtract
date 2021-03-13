@@ -144,5 +144,9 @@ iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 iptables -A POSTROUTING -t nat -j MASQUERADE
 iptables -A FORWARD -i br0 -j ACCEPT
 ```
+```
+echo 1 > /proc/sys/net/ipv4/ip_forward
+```
+
 * Создаём ещё более безопасного пользователя! Заходим под ним по ssh
 * И производим установку по инструкции с самого начала. 
