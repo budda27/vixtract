@@ -131,7 +131,7 @@ deb http://archive.ubuntu.com/ubuntu bionic-updates main universe
 ```
 passwd root
 apt update
-apt install openssh-server curl python3-pip mc vim
+apt install openssh-server curl python3-pip mc vim resolvconf
 systemctl enable sshd
 ```
 * На root по ssh
@@ -142,10 +142,14 @@ vi /etc/ssh/sshd_config
 PermitRootLogin yes
 ```
 ```
-echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf
+# echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf
 ```
-
-
+```
+vi /etc/resolvconf/resolv.conf.d/head
+# Дописываем
+nameserver 8.8.4.4
+nameserver 8.8.8.8
+```
 
 ```
 exit
