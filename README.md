@@ -121,5 +121,11 @@ exit
 https://vk.com/@opensuse_os-lxc-i-redmine-dlya-testov
 ```
 * Далее nat на сеть контейнера
+* Я сделал так у меня вообще firewalld отключен, хватает их в сети...
+```
+iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+iptables -A POSTROUTING -t nat -j MASQUERADE
+iptables -A FORWARD -i br0 -j ACCEPT
+```
 * Создаём ещё более безопасного пользователя! Заходим под ним по ssh
 * И производим установку по инструкции с самого начала. 
