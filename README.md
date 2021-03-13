@@ -123,7 +123,7 @@ exit
 https://vk.com/@opensuse_os-lxc-i-redmine-dlya-testov
 ```
 ```
-lxc.rootfs.path = /var/lib/lxc/vixtract/rootfs
+lxc.rootfs.path = /var/lib/lxc/vixtract/ROOTFS
 lxc.include = /usr/share/lxc/config/common.conf
 lxc.arch = x86_64
 lxc.uts.name  = vixtract
