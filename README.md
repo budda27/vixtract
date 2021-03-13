@@ -82,7 +82,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 ```
->>> Справляем на этапе перед установкой:
+>>> Исправляем на этапе перед установкой:
 
 ```
 dpkg-reconfigure locales
@@ -131,7 +131,7 @@ deb http://archive.ubuntu.com/ubuntu bionic-updates main universe
 ```
 passwd root
 apt update
-apt install openssh-server curl python3-pip
+apt install openssh-server curl python3-pip mc vim
 systemctl enable sshd
 ```
 * На root по ssh
