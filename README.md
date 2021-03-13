@@ -120,6 +120,23 @@ exit
 ```
 https://vk.com/@opensuse_os-lxc-i-redmine-dlya-testov
 ```
+```
+lxc.rootfs.path = /var/lib/lxc/vixtract/rootfs
+lxc.include = /usr/share/lxc/config/common.conf
+lxc.arch = x86_64
+lxc.uts.name  = vixtract
+lxc.net.0.type = veth
+lxc.net.0.flags = up
+lxc.net.0.link = br0
+lxc.net.0.ipv4.address = 192.168.0.110/24
+lxc.net.0.ipv4.gateway = 192.168.0.1
+lxc.net.0.name = eth1
+lxc.net.0.veth.pair = veth-vixtract
+lxc.start.auto = 1
+
+```
+
+
 * Далее nat на сеть контейнера
 * Я сделал так у меня вообще firewalld отключен, хватает их в сети...
 ```
