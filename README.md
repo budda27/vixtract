@@ -103,9 +103,17 @@ chroot test/
 ```
 
 ```
+vi /etc/apt/sources.list
+# Добавляем:
+deb http://archive.ubuntu.com/ubuntu bionic main universe
+deb http://archive.ubuntu.com/ubuntu bionic-security main universe 
+deb http://archive.ubuntu.com/ubuntu bionic-updates main universe
+```
+
+```
 passwd root
 apt update
-apt install openssh-server
+apt install openssh-server curl python3-pip
 systemctl enable sshd
 ```
 * На root по ssh
@@ -118,6 +126,9 @@ PermitRootLogin yes
 ```
 echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf
 ```
+
+
+
 ```
 exit
 ```
