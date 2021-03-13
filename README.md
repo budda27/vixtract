@@ -75,6 +75,24 @@ sudo apt-get update && sudo apt-get install git -y && git clone https://github.c
 ## Известные проблемы
 
 1. В текущей версии ViXtract не поддерживает установку в окружении за корпоративным прокси с авторизацией. В таком случае необходимо до установки вручную прописать конфигурацию прокси для npm, anaconda, wget, причем для wget также может потребоваться отключение проверки сертификата 'check_certificate = off'
+2. Что то с локалью, возможно lxc
+
+```
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+```
+>>> Справляем на этапе перед установкой:
+
+```
+dpkg-reconfigure locales
+# И отметить нужное!
+en_US.UTF-8
+ru_RU.UTF-8
+# После дефолтную делаем en_US.UTF-8
+```
+
+
 
 ## Установка в LXC
 ### Opensuse:
