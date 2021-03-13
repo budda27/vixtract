@@ -134,6 +134,7 @@ lxc.net.0.type = veth
 lxc.net.0.flags = up
 lxc.net.0.link = br0
 lxc.net.0.ipv4.address = 192.168.0.110/24
+# gw это адрес хоста, и он же gw. Я делаю алиас на br0
 lxc.net.0.ipv4.gateway = 192.168.0.1
 lxc.net.0.name = eth1
 lxc.net.0.veth.pair = veth-vixtract
@@ -142,7 +143,7 @@ lxc.start.auto = 1
 ```
 
 
-* Далее nat на сеть контейнера
+* Далее nat на сеть контейнера. У меня контейнер в другой сети поэтому nat. Так то можно обойтись gw в настройках контейнера есть!
 * Я сделал так у меня вообще firewalld отключен, хватает их в сети...
 ```
 iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
